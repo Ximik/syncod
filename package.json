@@ -1,0 +1,32 @@
+{
+  "name": "syncod",
+  "version": "0.0.1",
+  "description": "Encode JavaScript objects into flat strings dictionary. Synchronise complex nested structures over the network with minimal overhead.",
+  "author": "Alex Tsokurov <me@ximik.net>",
+  "license": "MIT",
+  "keywords": [
+    "circular",
+    "compare",
+    "deep",
+    "diff",
+    "difference",
+    "sync",
+    "fast",
+    "minimal"
+  ],
+  "homepage": "https://github.com/Ximik/syncod#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ximik/syncod.git"
+  },
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier --write **/*.js types.d.ts README.md",
+    "test": "tap --no-esm --no-coverage --no-coverage-report --node-arg=--experimental-modules --node-arg=--no-warnings"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tap": "^14.10.6"
+  }
+}
